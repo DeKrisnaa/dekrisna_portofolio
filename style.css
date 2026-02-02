@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 80px;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+
+nav a {
+    margin-left: 25px;
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 80px 8%;
+    min-height: auto;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #38bdf8;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    line-height: 1.8;
+    color: #cbd5f5;
+}
+
+.hero img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56,189,248,0.4);
+}
+
+/* TITLE */
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #38bdf8;
+}
+
+/* CARD */
+.card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* TOOLS */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.tool-card {
+    background: #020617;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.tool-card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    font-weight: 500;
+}
+
+/* WARNA ASLI LOGO */
+.tool-card.html i { color: #e34f26; }
+.tool-card.css i { color: #1572b6; }
+.tool-card.js i { color: #f7df1e; }
+.tool-card.figma i { color: #f24e1e; }
+.tool-card.github i { color: #ffffff; }
+
+/* HOVER */
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(56,189,248,0.4);
+}
+
+/* SOSIAL */
+.social a {
+    font-size: 28px;
+    margin-right: 20px;
+    color: #e5e7eb;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #38bdf8;
+}
+
+/* ORGANISASI */
+.org-card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.org-card h3 {
+    color: #38bdf8;
+    margin-bottom: 5px;
+}
+
+.org-card span {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.org-card p {
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
