@@ -23,7 +23,7 @@ section {
 /* HERO */
 .hero {
     display: flex;
-    flex-direction: column;   /* FOTO DI ATAS */
+    flex-direction: column-reverse; /* 🔥 INI KUNCINYA */
     align-items: center;
     justify-content: center;
     gap: 25px;
