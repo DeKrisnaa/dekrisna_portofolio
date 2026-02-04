@@ -20,16 +20,26 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 40px;
+    padding: 12px 16px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
     background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
+
+    overflow-x: auto;       /* 🔥 KUNCI */
+    white-space: nowrap;    /* 🔥 KUNCI */
 }
 
+nav a {
+    flex: 0 0 auto;
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 nav a {
     margin-left: 25px;
@@ -47,6 +57,11 @@ section {
     min-height: auto;
 }
 
+body {
+    padding-top: 70px;
+}
+
+
 /* HERO */
 .hero {
     display: flex;
@@ -55,13 +70,6 @@ section {
     gap: 40px;
     flex-wrap: wrap;
     text-align: center;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -87,6 +95,7 @@ section {
     border: 4px solid #38bdf8;
     box-shadow: 0 0 30px rgba(56,189,248,0.4);
 }
+
 
 /* TITLE */
 h2 {
@@ -184,6 +193,23 @@ h2 {
     margin-top: 10px;
     line-height: 1.7;
 }
+
+/* COMING SOON */
+.coming-soon {
+    text-align: center;
+    opacity: 0.85;
+}
+
+.coming-soon h3 {
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.coming-soon p {
+    font-style: italic;
+    color: #94a3b8;
+}
+
 
 /* FOOTER */
 footer {
