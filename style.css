@@ -5,14 +5,13 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body {
-    padding-top: 80px;
-}
 
 body {
     background: #0f172a;
     color: #e5e7eb;
+    padding-top: 220px; /* tinggi navbar vertikal */
 }
+
 
 /* NAVBAR */
 nav {
@@ -20,32 +19,20 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 12px 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 0.98);
     backdrop-filter: blur(10px);
     z-index: 1000;
-
-    overflow-x: auto;       /* 🔥 KUNCI */
-    white-space: nowrap;    /* 🔥 KUNCI */
 }
 
+
 nav a {
-    flex: 0 0 auto;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
     color: #e5e7eb;
     text-decoration: none;
     font-size: 14px;
-}
-
-nav a {
-    margin-left: 25px;
-    color: #e5e7eb;
-    text-decoration: none;
-    transition: 0.3s;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 nav a:hover {
@@ -56,11 +43,6 @@ section {
     padding: 80px 8%;
     min-height: auto;
 }
-
-body {
-    padding-top: 70px;
-}
-
 
 /* HERO */
 .hero {
@@ -217,16 +199,4 @@ footer {
     padding: 20px;
     background: #020617;
     color: #94a3b8;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    nav {
-        justify-content: center;
-    }
 }
