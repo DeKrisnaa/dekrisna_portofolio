@@ -23,10 +23,10 @@ section {
 /* HERO */
 .hero {
     display: flex;
+    flex-direction: column;   /* FOTO DI ATAS */
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 25px;
     text-align: center;
 }
 
