@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-/* NAVBAR FIX */
+/* NAVBAR FIX FINAL */
 nav {
     position: fixed;
     top: 0;
@@ -15,34 +15,52 @@ nav {
     background: rgba(15, 23, 42, 0.98);
     backdrop-filter: blur(10px);
     z-index: 1000;
+    overflow-x: hidden;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
     padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-    color: #e5e7eb;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-nav a:hover {
+.nav-logo {
+    font-size: 18px;
+    font-weight: 600;
     color: #38bdf8;
 }
 
-/* BODY OFFSET */
-body {
-    padding-top: 80px;
-    background: #0f172a;
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
     color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.nav-menu a:hover {
+    color: #38bdf8;
+}
+
+/* JARAK KONTEN DENGAN NAVBAR */
+body {
+    padding-top: 90px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
 }
 
 section {
